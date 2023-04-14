@@ -1,3 +1,6 @@
+//Por Joaquin R y Santiago M
+//Curso: 5LA 2023
+
 #include <DHT.h>
 #include <DHT_U.h>
 #include <Wire.h>     // libreria para bus I2C
