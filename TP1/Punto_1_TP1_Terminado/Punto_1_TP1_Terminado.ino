@@ -39,7 +39,7 @@ int estadoBoton;
 int estadoBOTON_MINUTOS;
 int estadoBOTON_HORAS;
 int cambioEstados;
-int definirRELOJ; //se hace solo una vez
+int definirRELOJ; 
 int flagTemperatura;
 
 
@@ -124,7 +124,7 @@ void loop() {
 
       else {
         display.setCursor(0, 45);
-        display.print("Son las: ");
+        display.print("Hora: ");
         display.print(HORAS);
         display.print(":");
         display.print(MINUTOS);
