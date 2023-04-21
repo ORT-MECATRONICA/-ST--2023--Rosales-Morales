@@ -44,7 +44,6 @@ int flagTemperatura;
 
 void setup() {
 
-  pinMode(LED, OUTPUT);
   pinMode(BOTON_RESTA, INPUT_PULLUP);
   pinMode(BOTON_SUMA, INPUT_PULLUP);
 
@@ -86,6 +85,7 @@ void loop() {
       display.setCursor(0, 25);
       display.print("Temp actual: ");
       display.println(temperaturaActual);
+      Serial.println(temperaturaActual);
       display.display();
       
       if (definirUmbral == SET) {
@@ -98,6 +98,7 @@ void loop() {
         display.setCursor(0, 45);
         display.print("Temp umbral: ");
         display.print(umbral);
+        Serial.println(umbral);
         display.display();
       }
 
@@ -120,7 +121,8 @@ void loop() {
 
       display.setCursor(0, 25);
       display.println("Temperatura umbral");
-      display.print(umbral);
+      display.print(umbral); 
+      Serial.println(umbral);
       display.display();
 
 
@@ -140,7 +142,7 @@ void loop() {
         estadoBOTON_RESTA = HIGH;
       }
 
-      if (lecturaBOTON_RESTA == HIGH && estadoBOTON_SUMA == HIGH && cambioEstados == LOW) {
+      if (lecturaBOTON_RESTA == LOW && estadoBOTON_RESTA == HIGH && cambioEstados == LOW) {
         umbral -= 1;
         estadoBOTON_RESTA = LOW;
       }
@@ -149,7 +151,7 @@ void loop() {
         estadoBOTON_SUMA = HIGH;
       }
 
-      if (lecturaBOTON_RESTA == HIGH && estadoBOTON_SUMA == HIGH && cambioEstados == LOW) {
+      if (lecturaBOTON_SUMA == HIGH && estadoBOTON_SUMA == HIGH && cambioEstados == LOW) {
         umbral += 1;
         estadoBOTON_SUMA = LOW;
       }
