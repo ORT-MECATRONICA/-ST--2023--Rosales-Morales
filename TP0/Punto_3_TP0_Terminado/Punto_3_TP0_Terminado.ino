@@ -1,11 +1,6 @@
-#include <DHT.h>
-#include <DHT_U.h>
 #include <Wire.h>     // libreria para bus I2C
 #include <Adafruit_GFX.h>   // libreria para pantallas graficas
 #include <Adafruit_SSD1306.h>   // libreria para controlador SSD1306
-#include <Adafruit_Sensor.h>
-#include <dummy.h>
-
 
 #define ANCHO 128     // reemplaza ocurrencia de ANCHO por 128
 #define ALTO 64       // reemplaza ocurrencia de ALTO por 64
