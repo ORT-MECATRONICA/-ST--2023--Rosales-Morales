@@ -24,7 +24,6 @@ DHT dht(DHTPIN, DHTTYPE);
 float h;
 float t;
 
-
 void setup() {
   Wire.begin();         // inicializa bus I2C
   oled.begin(SSD1306_SWITCHCAPVCC, 0x3C); // inicializa pantalla con direccion 0x3C
