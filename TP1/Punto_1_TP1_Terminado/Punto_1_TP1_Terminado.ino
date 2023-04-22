@@ -1,4 +1,4 @@
-//Por Joaquin R - Santi M
+//Por Joaquin R y Santiago M
 //Curso: 5LA 2023
 
 #include <Wire.h>
