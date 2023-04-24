@@ -1,3 +1,6 @@
+//Por Joaquin R y Santiago M
+//Curso: 5LA 2023
+
 #include <Wire.h>     // libreria para bus I2C
 #include <Adafruit_GFX.h>   // libreria para pantallas graficas
 #include <Adafruit_SSD1306.h>   // libreria para controlador SSD1306
@@ -41,5 +44,4 @@ void loop() {
   }else{
     digitalWrite(RELAY, LOW);
   }
-
 }

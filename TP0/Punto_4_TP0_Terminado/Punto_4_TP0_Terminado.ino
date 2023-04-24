@@ -34,7 +34,6 @@ float temperaturaAntes;
 
 int lecturaBOTON_RESTA;
 int lecturaBOTON_SUMA;
-
 int estadoBoton;
 int estadoBOTON_RESTA;
 int estadoBOTON_SUMA;
